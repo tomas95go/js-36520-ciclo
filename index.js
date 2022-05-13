@@ -11,13 +11,13 @@ while(continua){
         break;
     } else if (isNaN(input)) {
         alert(`Lo lamento, su input no es valido.`);
-    } else if (Number(input) > 10) {
+    } else if (parseInt(Number(input)) > 10) {
         alert(`Lo lamento, su número debe ser menor a 10.`);
-    } else if (Number(input) <= 0) {
+    } else if (parseInt(Number(input)) <= 0) {
         alert(`Lo lamento, su número debe ser mayor a 0.`);
     }  else {
         for(let i = 1; i <= 5;i++){
-            alert(`Cálculo, ${Number(input)} ^ ${i} es: ${Number(input) ** i}`)
+            alert(`Cálculo, ${parseInt(Number(input))} ^ ${i} es: ${parseInt(Number(input)) ** i}`)
         }
     }
     
